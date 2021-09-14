@@ -7,7 +7,7 @@ what is going on here,
 
 so the user logs in and they are placed in an environment, in that environment they have access to a shell, were they can make files and scripts and stuff. the users are logged in to a tmux session. other people can see what they are doing. the other people will not have access to each individuals environment. but they can see the difference between them.
 
-<div>
+
 ____________________________
 |             |            |
 |             |            |
@@ -36,4 +36,4 @@ ____________________________
 |_____________|____________|
 |sessions     -            |
 ____________________________
-<\div>
+
