@@ -1,6 +1,14 @@
-.PHONY: all
-all: hello
-CC = /usr/bin/guile
+CC = gcc
+LIBS = -lncurses
 
-hello: curses.scm
-	${CC} curses.scm
+.PHONY: all run
+all: hello run
+
+hello: curses.c
+	${CC} curses.c ${LIBS} -o curses
+
+run: curses
+	./curses
+
+clean:
+	rm curses
