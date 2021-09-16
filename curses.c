@@ -1,11 +1,15 @@
 #include <ncurses.h>
 #include <stdlib.h>
 
+void login(){
+  addstr("plz enter credetnials\n");
+  refresh();
+  getchar();
+};
+
 int main(){
 	initscr();
-	addstr("hello");
-	refresh();
-	getch();
+	login();
 	endwin();
 	return 0;
 };

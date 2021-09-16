@@ -5,10 +5,10 @@ LIBS = -lncurses
 all: hello run
 
 hello: curses.c
-	${CC} curses.c ${LIBS} -o curses
+	${CC} curses.c ${LIBS} -o tui
 
-run: curses
-	./curses
+run: tui
+	./tui
 
 clean:
-	rm curses
+	rm tui
