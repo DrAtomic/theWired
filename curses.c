@@ -1,5 +1,8 @@
 #include <ncurses.h>
 #include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "shellscript.h"
 
 
 int main(){
@@ -17,5 +20,6 @@ int main(){
 	getch();
 	endwin();
 
+	system(SHELLSCRIPT);
 	return 0;
 };
