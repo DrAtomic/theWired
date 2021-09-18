@@ -4,11 +4,11 @@ LIBS = -lncurses
 .PHONY: all run
 all: hello run
 
-hello: curses.c
-	${CC} curses.c ${LIBS} -o tui
+hello: theWired.c
+	${CC} theWired.c ${LIBS} -o theWired
 
-run: tui
-	./tui
+run: theWired
+	./theWired
 
 clean:
-	rm tui
+	rm theWired

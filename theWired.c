@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include "shellscript.h"
 
+//TODO: have them enter username and passwd
+//TODO: ssh into server
 
 int main(){
 	char mesg[] = "Enter Username: ";
@@ -19,7 +21,7 @@ int main(){
 	mvprintw(LINES - 2, 0, "You Entered: %s", str);
 	getch();
 	endwin();
-
+	// this is just for debugging the script will be run on the server	
 	system(SHELLSCRIPT);
 	return 0;
 };
