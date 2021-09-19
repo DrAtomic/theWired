@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "shellscript.h"
+#include "../include/shellscript.h"
 
 //TODO: have them enter username and passwd
 //TODO: ssh into server
